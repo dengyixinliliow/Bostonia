@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    overflow: scroll;
+    background-color: #dc3545;
+}
+
+iframe {
+    width: 90%;
+    height: 80%;
+    margin-top: 1cm;
+    border-radius: 30px;
+    margin-bottom: 1cm;
+}
+
+h1, h4 {
+    font-family: 'Courgette', cursive;
+}
+
+h6 span {
+    color: #dc3545;
+}
+
+h6 {
+    font-family: 'Merriweather', serif;
+}

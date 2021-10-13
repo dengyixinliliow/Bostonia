@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#homephoto {
+    width: 100%;
+}
+
+.home-photo {
+    width: 100%;
+    max-height: 80%;
+}
+
+p, .navbar {
+    font-family: 'Merriweather', serif;
+}
+
+body h1, h3 {
+    font-family: 'Anton', sans-serif;
+    
+}
+
+h1+p {
+    padding: 30px;
+}
+
+p+p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.description::first-letter {
+    font-size: 200%;
+    color:white
+}
+
+div p {
+    text-indent: 1cm;
+}
+
+#footer p {
+    text-indent: 0px;
+}
+
+#like {
+    color: gray;
+}
+
+#like:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 100%;
+    width: 50%;
+}
+
+textarea, input {
+    border-radius: 30px;
+}
+
+label {
+    font-family: 'Merriweather', serif;
+  
+}
+
+h3+p {
+    color:white;
+}
+
+i {
+    cursor: pointer;
+}

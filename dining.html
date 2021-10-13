@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOSTOPIA</title>
+    <!-- Import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Import AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- Import Bootstrap UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="./css/dining.css"
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-danger sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="./img/logo.png" alt="bostopia" style="height: 50px; width: 50px;"><span class="navbar-text">BOSTOPIA</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">Boston News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./dining.html">Dining</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./map.html">Explore</a>
+              </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section id="explore-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col py-5" id="event-header">
+                    <h1>Dining in Boston</h1>
+                    <img src="./img/food.png" alt="food" id="food-header">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col">
+                    <h4>With a rich colonial history, international influences 
+                        (North End, we’re talking to you), and a seaside locale, Boston certainly 
+                        has a seat at the big-name dining table. Through the years, the city has morphed 
+                        its simple local flavor into globally recognized and universally loved classic dishes.</h4>
+                    <h4>Click the folowing buttons to see what we have recommand for you...</h4>
+                </div>
+                <div class="row">
+                    <div class="col my-5">
+                        <button id="vegan">Vegan</button>
+                        <button id="italian">Italian</button>
+                        <button id="american">American</button>
+                        <button id="asian">Asian</button>
+                        <button id="dessert">Sweets</button>
+                        <button id="seafood">Seafood</button>
+                        <button id="drink">Drink</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants -->
+    <section>
+        <div class="container">
+            <div class="row restaurants" id="restaurants">
+            </div>
+        </div>
+    </section>
+
+    <!-- LIKE BUTTON -->
+    <div class="fixed-bottom">
+      <h1><a href="planner.html"><i class="bi bi-journal-richtext"  data-toggle="tooltip" title="Click here to set your planner!"></i></a></h1>
+      <h1><i class="bi bi-heart-fill" id="like" data-toggle="tooltip" title="Click here if you like our website!"></i></h1>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid bg-danger">
+            <div class="row">
+                <div class="col text-center py-3">
+                    <p>Copyright &copy; <span id="year"></span> By Yixin Deng</p>
+                </div>            
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+      import { copyright } from "./javascript/copyright.js"
+      import { like } from "./javascript/copyright.js"
+      import { tool } from "./javascript/copyright.js"
+      window.addEventListener("DOMContentLoaded", event => {
+        like();
+        tool();
+        const year = document.getElementById("year");
+        const fullyear = copyright();
+        year.innerHTML = `${fullyear}`;
+      });
+    </script>
+    
+    <script src="./javascript/api.js"></script>
+    <script src="./javascript/dining.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

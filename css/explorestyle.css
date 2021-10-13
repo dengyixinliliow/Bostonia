@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#explore-header {
+    background: url("../img/bg2.jpeg");
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+  }
+
+.boston-photo {
+    width: 75%;
+    max-height: 80%
+}
+
+#downtown-d, #backbay-d, #fenway-d, #bay-d {
+    display: none;
+}
+
+p, .navbar {
+    font-family: 'Merriweather', serif;
+}
+
+h1, h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+.des p {
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 769px) {
+    .des p {
+        margin-top: 0px;
+    }
+}
+
+.one+.two {
+    color: white;
+}
+
+.txt::first-line {
+    text-indent: 1cm;
+}
+
+.txt::first-letter {
+    font-size:x-large;
+}
+
+h3+img {
+    border-radius: 30px;
+}
+
+#explore-header h1 {
+    color: white;
+}
+
+#like {
+    color: gray;
+}
+
+i:hover {
+    cursor: pointer;
+}
